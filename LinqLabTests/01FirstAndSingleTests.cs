@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using ExpectedObjects;
 using LinqLab;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using Assert = NUnit.Framework.Assert;
 
@@ -37,14 +36,12 @@ namespace LinqLabTests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException))]
         public void Use_First_to_search_UserName_equal_skilltree()
         {
             var actual = new FirstAndSingleLab().FirstToGetUserNameEuqalToSkilltree();
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException))]
         public void Use_Single_to_search_UserName_equal_demo()
         {
             var actual = new FirstAndSingleLab().SingleToGetUserNameEuqalToDemo();

@@ -2,12 +2,10 @@
 using System.Linq;
 using ExpectedObjects;
 using LinqLab;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 
 namespace LinqLabTests
 {
-    [TestClass()]
     public class GroupByTests
     {
         [Test]
