@@ -33,7 +33,8 @@ namespace LinqLab
 
         public List<Sample> WhereToGetUserNameContainE()
         {
-            return Source.Where(x => x.UserName.Contains("e")).ToList();
+            var result = new List<Sample>();
+            return result;
         }
 
         public List<Sample> WhereToGetUserNameEndWithO()

@@ -17,7 +17,7 @@ namespace LinqLab
 
         public Sample FirstToGetUserNameEqualToDemo()
         {
-            return Source.First((x) => x.UserName == "demo");
+            return new Sample();
         }
 
         public Sample FirstOrDefaultToGetUserNameEuqalToSkilltree()
