@@ -15,45 +15,38 @@ namespace LinqLab
         }
         public List<Sample> WhereToGetIdBiggerThen8()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.Id > 8).ToList();
         }
 
         public List<Sample> WhereToGetPrizeBiggerThen200()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.Price > 200).ToList();
         }
 
         public List<Sample> WhereToGetUserNameStartWithD()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.UserName.StartsWith("d")).ToList();
         }
 
         public List<Sample> WhereToGetUserNameContainE()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.UserName.Contains("e")).ToList();
         }
 
         public List<Sample> WhereToGetUserNameEndWithO()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.UserName.EndsWith("o")).ToList();
         }
 
         public List<Sample> WhereToGetUserNameEqualToDemoAndJoey()
         {
             var whereStr = new[] {"demo","joey" };
-            var result = new List<Sample>();
-            return result;
+            return Source.Where(x => x.UserName == "demo" || x.UserName =="joey").ToList();
         }
 
         public bool WhereToCheckIsAnyIdEqualTo99()
         {
-            var result = true;
-            return result;
+            return Source.Any(x => x.Id == 99);
         }
     }
 }

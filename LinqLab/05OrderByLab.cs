@@ -16,20 +16,17 @@ namespace LinqLab
 
         public List<Sample> AscendingId()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.OrderBy(x => x.Id).ToList();
         }
 
         public List<Sample> DescendingId()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.OrderByDescending(x => x.Id).ToList();
         }
 
         public List<Sample> AscendingPriceAndThenAscendingId()
         {
-            var result = new List<Sample>();
-            return result;
+            return Source.OrderBy(x => x.Price).ThenBy(x => x.Price).ToList();
         }
     }
 }

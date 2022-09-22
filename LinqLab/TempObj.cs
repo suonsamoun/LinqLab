@@ -10,5 +10,11 @@ namespace LinqLab
     {
         public string UserName { get; set; }
         public DateTime CreateTime { get; set; }
+
+        public TempObj(string userName, DateTime createTime)
+        {
+            UserName = userName;
+            CreateTime = createTime;
+        }
     }
 }
