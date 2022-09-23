@@ -26,7 +26,7 @@ namespace LinqLab
 
         public List<Sample> AscendingPriceAndThenAscendingId()
         {
-            return Source.OrderBy(x => x.Price).ThenBy(x => x.Price).ToList();
+            return Source.OrderBy(x => x.Price).ThenBy(x => x.Id).ToList();
         }
     }
 }
